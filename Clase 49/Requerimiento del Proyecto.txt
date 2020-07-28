@@ -1,0 +1,9 @@
+							BODEGA ANGITA
+
+Requerimientos del Proyecto:
+- Se requiere el desarrollo de un sistema, para la gestión de ventas e inventario en un minimarket.
+- El cual debe tener la capacidad de poder registrar tanto a usuarios, clientes, productos, categorías.
+- Deberá alojar la información en una base de datos local o remota.
+
+- El sistema deberá tener 2 niveles de permiso, donde cada usuario será asignado a un nivel diferente, de acuerdo al rol que desempeñe dentro de la empresa:
+  Administrador o Vendedor.
