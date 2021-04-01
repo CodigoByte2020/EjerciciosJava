@@ -1,0 +1,440 @@
+*******************************************************************************************************************************************************************
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< CURSO DE JAVA >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+Clase 01: INTRODUCCIÓN
+Netbeans IDE: Entorno de desarrollo integrado, que nos facilita la tarea de 
+programar nuestro proyectos.
+
+Clase 02: CREANDO PROYECTOS - VERSIÓN EXTENDIDA
+Colocar la primera letra de nuestro proyecto en mayúscula, no usar espacios.
+Libreía es igual a biblioteca, pero la manera más correcta es biblioteca.
+Nuestra clase principal tendrá el mismo nombre que nuestro proyecto.
+La documentación de un proyecto es para saber QUE ES ?, COMO LO HIZE ?, Y PARA QUE SIRVE ?
+Package: Paquete que almacena clases, para ayudar en el orden de nuestro proyecto, tiene el mismo nombre que el proyecto pero todo en minúscula.
+
+Clase 03: LÓGICA DE PROGRAMACIÓN
+---------------------------- Ejercicio ------------------------------------
+Leo, analizo, resuelvo, programo.
+
+Clase 04: PALABRAS RESERVADAS
+Son palabras, que solo el lenguaje de programación Java, puede utilizar como identificadores, porque tienen una función especial.
+No pueden ser utilizadas por el programador, como identificadores para sus programas.
+
+Clase 05: COMENTARIOS
+Los comentarios son anotaciones legibles, que el programador agrega dentro del código fuente.
+Estos comentarios, son de gran importancia para cualquier programador, ya que le permiten entender el código fuente de manera sencilla, sin tener que revisar la 
+estructura lógica del programa.
+Pero al mismo tiempo, los comentarios son usualmente ignorados por el compilador e interprete, por lo que no afecta de ninguna manera la funcionalidad de nuestros
+programas.
+Existen 2 tipos de comentarios:
+1. Comentarios de una línea. //
+2. Comentarios de varias línes. /* */
+JavaDoc: Sistema normalizado de comentarios, nos permite documentar todo nuestro programa a través de comentarios.
+
+Clase 06: PROGRAMACIÓN ORIENTA A OBJETOS - POO
+Programación estructurada o procedimental: Es un paradigma de progrmación orientado a mejorar la claridad, calidad y tiempo de desarrollo de un programa de PC, 
+utilizando únicamente subrutinas y 3 estructuras.
+- Secuencia
+- Selección (if y switch)
+- Iteración (bucles: for, while, do-while)
+Programación Orientada a Objetos (POO): Es una manera de diseñar y desarrollar software que trata de imitar la realidad tomando algunos conceptos esenciales de ella.
+Objeto: Sus rasgos son:
+Identidad: es el nombre que distingue a un objeto de otro
+Estado: son las características que describen al objeto
+Comportamiento: es lo que hace el objeto.
+* En conclusión un iddentificador es el nombre del objeto, las variables son la características del objeto y los métodos son el comportamiento del objeto.
+
+Clase 07: PALABRA RESERVADA - THIS
+Cuando utilizamo POO, podemos acceder a variables que se encuentran en otras clases.
+Esto solo es posible, si creamos una instancia entre las clases.
+La instancia de clases, es cuando hacemos que 2 clases interactuen entre sí.
+Al acceder a variables de instancia de una clase, podemos encontrarnos con variables que se llamen igual que en la clase de donde estamos accediendo, cuando esto
+sucede, debemos utilizar la palabra reservada "this". Porque "this" va indicar, si se están utilizando las variables de instancia, o las variables de la clase 
+desde la cual estamos accediendo.
+
+Clase 08: ENCAPSULAMIENTO
+Consiste en controlar el acceso a los datos, que conforman un objeto o instancia de una clase.
+Es decir indicar que métodos y atributos son públicos, para poder revisar su contenido e incluso ser modificados. Y a su vez indicar que métodos y atributos son 
+privados, para evitar el acceso a sus contenido o que se realize alguna modificación en ellos.
+En conclusión, el encapsulamiento consiste en ocultar los atributos y métodos de una clase, para evitar que sean modificados desde otra clase.
+Esto es con el fin de que cuando otro programador utilize nuestra clase, no pueda cambiar su estado o comportamiento de manera imprevista o incontrolada.
+Para poder realizar la encapsulación en java es necesario utilizar los modificadores de acceso. Los modificadores de acceso permiten dar un nivel de seguridad mayor a
+nuestras aplicaciones restingiendo el acceso a diferentes atibutos, métodos o constructores, asegurándonos que el usuario debe seguir un "ruta" especificada por 
+nosotros para acceder a la información.
+
+CLASE 09: ENCAPSULAMIENTO
+--------------------------------
+
+CLASE 10: MÉTODOS SETTER Y GETTER
+Sin embargo, en ocasiones es necesarios otorgar acceso a algunos atributos de nuestra clase, sin eliminar el encapsulamiento.
+Son métodos que permiten el acceso a los atributos de una clasee, que están encapsulados de manera privada.
+MÉTODOS SETTER: Sirve para asignar un valor a un atributo de la clase, como esta método no retorna nada, debe contener la palabra void en su estructura, y siempre 
+debe recibir un parámetro de entrada.
+MÉTODOS GETTER: Accede a la clase para retornarnos el valor de algún atributo que queramos, este método si debe retornar un valor por lo cual la estructura de este
+método debe contener el tipo de valor que vamos a retornar con ese método.
+
+CLASE 11: MODIFICADOR DE ACCESO POR DEFECTO
+Para poder implementar el encapsulamiento de java, es indispensable utilizar los modificadores de acceso, estos permiten dar un nivel de seguridad mayor a nuestras 
+clases, restringiendo el acceso a diferentes atributos, métodos y constructores.
+Asegurando que otro programador seguira un ruta especificada por nosotros para acceder a la información.
+Modificador de acceso por defecto: no tiene ninguna palabra reservada asociada, se conoce como default o package-private.
+Cuando no especificamos ningún modificador de acceso, se utiliza el modificador de acceso por defecto, que consiste en que el elemento puede ser accedido sólo desde
+las clases que pertenezcan al mismo paquete.
+
+CLASE 12: MODIFICADOR DE ACCESO PUBLIC
+Permite acceder al elemento desde cualquier clase, independientemente de que esta pertenezca o no al paquete en que se encuentra el elemento.
+
+CLASE 13: MODIFICADOR DE ACCESO PRIVATE
+Es el más restrictivo y especifíca que los elementos que lo utilizan, sólo pueden ser accedidos desde la clase en la que se encuentran.
+La única manera de acceder a este tipo de modificador, es creando los métodos getter y setter.
+
+CLASE 14: MODIFICADOR DE ACCESO PROTECTED
+Indica que los elementos sólo pueden ser accedidos desde su mismo paquete (al igual que el modificador por defecto).
+Y también desde cualquier clase que "herede" la clase en que se encuentra, independientemente de si esta se encuentra en el mismo paquete o no.
+
+CLASE 15: HERENCIA
+Es el procedimiento utilizado para reutilizar código cuando creamos nuevas clases.
+Pues lo único que se hace, es indicar al programa que queremos utilizar las variables y funciones de una clase que ya hemos creado anteriormente, es decir utilizar 
+métodos y atributos de una clase ya existente y colocarlos dentro de una nueva clase, sin la necesidad de volver a escribir código.
+Clase Padre o clase base:
+Esta clase se crea primero, es donde se encuentra escrito el código que contiene a las variables y métodos que se van a reutilizar.
+Clase Hija o clase derivada:
+Es la nueva clase, donde vamos a reutilizar los métodos y atributos, que se crearon en la clase padre sin necesidad de volver a escribir el mismo código para poder
+utilizarlos.
+Herencia Simple: Consiste en que una clase hija solo puede heredar los atributos y métodos de una única clase padre.
+Y una clase padre puede tener múltiples clases hijas.
+CONCLUSIÓN: La herencia sirve para compartir el código creado previamente en una clase, y utilizarlo infinidad de veces en otras clases, sin tener que volver a 
+escribir el mismo código una y otra vez.
+ 
+CLASE 16: POLIMORFISMO
+En la POO, es la capacidad que se le da a un método, de comportarse de manera diferente de acuerdo a la instancia creada.
+Dependiendo de la clase con la que se este interactuando, será la función que va a ejecutar el método.
+CONCLUSIÓN: Consiste en hacer que un método se comunique con clases diferentes, y dependiendo de la clase con la se que tenga comunicación, su comportamitento será 
+completamente diferente.
+
+CLASE 17: PALABRA RESERVADA - SUPER
+Se usa para acceder a un elemento en la clase padre.
+Uno de los usos más frecuentes que le damos a la palabra super, es poder invocar al constructor de la clase padre, con ello podemos reducir la cantidad de código 
+que debemos escribir en nuestras clases hijas.
+
+CLASE 18: ÁMBITO DE VARIABLES EN JAVA
+El ámbito de una variable define su alcance de uso, es decir, indica en que secciones de código una variable estará disponible. 
+Fuera de este ámbito, una variable no podrá ser accedida.
+En java tenemos 3 tipos de ámbitos que pueden aplicar a una variable:
+Ámbito Local: Variables de ámbito local o variables de bloque, son aquellas que sólo pueden ser accedidas desde el bloque de código en el que han sido declaradas.
+Ámbito Global: Variables de ámbito global o de instancia, son aquellas que pertenecen a la clase donde han sido declaradas, y dependiendo del modificador de acceso 
+utilizado, podrán ser accedidas unicamente desde la misma clase.
+Ámbito Estático: Variables estáticas o variables de clase, son aquellas que pertenecen a la propia clase donde han sido declaradas, y para poder acceder a ellas no
+es necesario crear una instancia de clases.
+
+CLASE 19 - 20: EJERCICIO PRÁCTICO POO - CAJERO AUTOMÁTICO
+------------------------------------------------------------
+
+CLASE 21: EXCEPCIONES
+Son el medio que ofrecen algunos lenguajes de programación, para tratar situaciones anómalas que pueden suceder cuando ejecutamos un programa.
+En conclusión una excepción es una situación anómala que puede tener lugar, cuando ejecutamos un determinado programa.
+La forma en que el programador trate esta anomalía es lo que se conoce generalmente como manejo o gestión de la excepción.
+Las excepciones son una forma de intentar conseguir que, si un código fuente no se ejecuta de la forma "prevista" de manera inicial, el programador sea capaz de 
+controlar esa situación y establecer cómo debe de responder el programa.
+Palabras reservadas para el manejo de excepciones:
+Try: tratar 
+Catch: captura
+Finally: finalmente
+
+CLASE 22: HILOS (THREADS)
+Es un flujo de control dentro de un programa, el cual permite tener múltiples procesos corriendo de forma simultánea.
+Con ayuda de los hilos podemos ejecutar 2 o más procesos al mismo tiempo, sin tener que esperar a que finalice un proceso para poder ejecutar el siguiente.
+Thread: hilo
+Run: correr
+Runnable: ejecutable
+
+CLASE 23: HILOS CON PARÁMETROS
+-------------------------------------------------------------
+
+CLASE 24: ESTADOS DE UN HILO
+Estados o ciclo de vide de un hilo
+Un hilo presenta distintos estados sesde su creación hasta el final de su ejecución. Estos estado son los siquiente:
+1) Nuevo (new): El hilo ha sido creado pero no inicializado, es decir, no se ha ejecutado todavía el método start().
+Se producirá un mensaje de error (IlleggalThreadStateException) si se intenta ejecutar cualquier método de la clase Thread Excepto con el método start():
+2) Ejecutable (Runnable): Cuando el método start() crea los recursos del sistema necesarios para ejecutar el hilo, programa el thread para ejecutarse, y llama
+al método run() del thread. En este punto el hilo está en el estado "Ejecutable".
+3) Bloqueado (Blocked o Not Runnable) El hilo se encuentra en ejecución, pero existe una tarea o atividad del mismo hilo que lo impide.
+4) Muerto (Dead) / Finalizado: Un hilo puede morir de 2 formas: Por causas naturales o siendo asesinado (parado). Una muerte natural se produce cuando su método 
+run() termina normalmente, mientras que una muerte provocada se produce cuando existe una instrucción que obligue al hilo a finalizar sin haber concluido su tarea 
+por completo.
+
+CLASE 25: SINCRONIZACIÓN DE HILOS
+Permite controlar el tiempo y forma de ejecución de varios hilos ejecutándose de manera simultánea.
+Cuya finalidad, es evitar que un hilo provoque el entorpecimiento de otro hilo al momento de estar ejecutando sus respectivas tareas.
+Establece un orden de ejecución en nuestro programa al utilizar hilos.
+
+CLASE 26: CONSTRUCTORES
+En java, podemos definir un método que se ejecute inicialmente y de manera automática. "A este método se le llama constructor."
+Un constructor tiene las siguientes características:
+- Tiene el mismo nombre de la clase.
+- Es el primer método que se ejecuta.
+- No puede retornar datos.
+- Cada vez que se crea una instancia se ejecuta una sóla vez.
+- Tiene por objetivo inicializar atributos.
+
+CLASE 27: LA CLASE MATH (FUNCIONES TRIGONOMÉTRICAS)
+Contiene métodos para realizar operaciones y cálculos matemáticos como:
+- Funciones Hiperbólicas.
+- Funciones Trigonométricas.
+- Conversión de grados a radianes y viseversa.
+- Paso de coordenadas rectangulares a polares.
+Además la clase math tiene una referencia a las 2 constantes más utilizadas en matemáticas con una precisión de 15 decimales, las cuales son:
+e = 2.718281828459045
+Alt + 960 = pi = 3.141592653589793
+
+CLASE 28: LIMITAR LA CANTIDAD DE DECIMALES EN JAVA (RAÍZ CUADRADA)
+Existen 4 formas de realizar esto.
+------------------------------------------------------------------
+
+CLASE 29: NÚMEROS ALEATORIOS EN JAVA
+Existen 2 formas.
+------------------------------------
+
+CLASE 30: SUMA Y RESTAS DE MATRICES EN JAVA
+La suma de matrices solo se puede realizar entre matrices de la misma dimensión, es decir, las mismas filas y las mismas columnas, por tal motivo la matriz
+resultante tiene las mismas dimensiones.
+La suma se efectúa en cada uno de los elementos correspondientes a cada matriz en su posición actual, es decir, se sumará la posición MatrizUno[0, 0] con la 
+posición MatrizDos[0, 0] y el resultado se guardará en MatrizResultado[0, 0].
+La resta de matrices es similar a la suma, se cumplen las mismas reglas, dónde deben tener las mismas dimensiones, la única diferencia de la suma, es que las 
+matrices se deben de restar.
+
+CLASE 31: MULTIPLICACIÓN DE MATRICES EN JAVA
+En la multiplicación de matrices, las reglas a seguir cambian por completo, ya que, a diferencia de la suma y la multiplicación, es necesario que el número de
+columnas de la primera matriz, sea igual al número de filas de la segunda matriz o viceversa.
+Adempás, la operación de la multiplicación no se realiza posición por posición, con lo cual se obtiene una matriz resultante con el número de filas de la 
+primera matriz y el número de columnas de la segunda matriz.
+
+CLASE 32: INTERFACES GRÁFICAS CON NETBEANS
+La interfaz gráfica de usuario GUI(graphical user interface), es un conjunto de imágenes y objetos, que representan de manera gráfica las acciones disponibles 
+en un programa.
+Su implementación consiste en proporcionar un entorno visual sencillo para permitir y facilitar la interacción del usuario con la computadora.
+
+CLASE 33: LISTAS TIPO PILA EN JAVA (ESTRUCTURA DE DATOS)
+Las listas, son un tipo de dato abstracto que nos permiten almacenar datos de una forma organizada al igual que los vectores, pero, a diferencia de estos, esta
+estructura es dinámica, por lo que no es necesario conocer la cantidad de elementos que va a contener.
+En una lista, cada elemento apunta al siguiente elemento, excepto el último elemento, el cual no tiene un sucesor y por tal motivo el valor del enlace es null.
+En este caso, los elementos son registros que contienen el dato a almacenar y un enlace al siguiente elemento.
+Los elementos de una lista, suelen recibir también el nombre de nodos de la lista.
+Cada  nodo tiene 2 campos:
+- Un campo, con información.
+- Un campo, con una apuntador al siguiente nodo de la lista.
+Dependiendo del procedimiento de inserción y extracción de nodos en la lista, tenemos los siguientes tipos:
+
+- Listas tipo pila: Cuando las inserciones y extracciones se realizan por el mismo lado de la lista.
+Estas listas tienen una característica en particular, la cual consiste en que el último elemento en entrar a la lista es el primero en salir.
+Por esta razón, también se les llama listas LIFO (Last In First Out - último en entrar primero en salir).
+Por último, una pila al ser una lista puede almacenar en el campo de información de un nodo cualquier tipo de valor:
+Valores enteros, valores flotantes, cadenas de caracteres, objetos, etc.
+
+- Listas tipo cola
+
+- Listas genéricas
+
+CLASE 34: ANALIZADOR SINTÁCTICO (LISTAS TIPO PILA)
+-------------------------- EJERCICIO ------------------------------
+
+CLASE 35: LISTAS TIPO COLA
+Son aquellas donde las inserciones se realizan al inicio de la lista y las extracciones se realizan al final de la lista.
+A este tipo de listas también se les conoce como listas FIFO (First in first out - primero en entrar primero en salir).
+
+CLASE 36: RECURSIVIDAD
+Es un técnica la cual permite que un bloque de instrucciones codificadas se ejecute "n" veces.
+Logrando en ocasiones reemplazar a las estructuras repetitivas.
+En java, los métodos pueden llamarse a si mismos, esto es posible cuando dentro de un método existe la invocación a si mismo, y de esta manera se 
+considera que ese método es recursivo.
+
+CLASE 37: FACTORIAL CON RECURSIVIDAD
+Es un valor que se obtiene como resultado de la multiplicación de todos los números que anteceden al número del cual se desea conocer su factorial a 
+excepción del 0. Es decir, para obtener el factorial de un número, se deben de multiplicar todos los números enteros que van desde el 1 hasta el número 
+del cual se desea obtener su factorial.
+
+CLASE 38: LA CLASE GRAPHICS
+Es la clase base abstracta para todos los contextos gráficos que permiten a un programa dibujar en componentes a través de objetos. 
+Un objeto graphics, encapsula la información de estado necesaria para las operaciones de renderizado básicas que admite Java, y que permite dibujar 
+elipses, cuadrados, líneas, mostrar texto, entre otros métodos de dibujo.
+
+CLASE 39: GRÁFICA CIRCULAR O POR SECTORES
+Las gráficas son una representación visual a partir del cual se puede representar e interpretar valores generalmente numéricos. Esta representación visual,
+sirve de apoyo a la hora de mostrar y comprender de manera sintetizada los datos recabados durante una investigación.
+Existen diversos tipos de gráficas, generalmente aplicándose unas u otras en función de lo que se pretenda representar o simplemente a preferencia de cada
+persona.
+Ejemplo:
+- Gráfica de barras
+- Gráfica de barras porcentual
+- Gráfica circular o por sectores, etc.
+La gráfica circular, también conocida como gráfica de queso o pastel, representa datos mediante la división de una circulo en tamaños proporcionales a los
+datos ingresados.
+Este tipo de gráfica, es habitual cuado se está mostrando la proporción dividida de un tema en particular.
+
+CLASE 40: GRÁFICA DE BARRAS O DE COLUMNAS
+Es una representación gráfica de un conjunto de datos o valores, está conformado por barras rectangulares de longitudes proporcionales a los valores 
+representados.
+Estas gráficas son usadas para comparar 2 o más valores.
+Las barras pueden orientarse horizontal o verticalmente.
+
+CLASE 41: GRÁFICA DE BARRAS PORCENTUAL
+También conocidas como tubos porcentuales acumulativos son una alternativa a la gráfica circular que permite visualizar mejor los datos con un porcentaje
+menor.
+
+CLASE 42: BASE DE DATOS EN JAVA
+Es una colección de datos almacenados de forma organizada con una lógica coherente
+Las base de datos permiten compartir estos datos entre distintos usuarios y programas, con lo cual se facilita el intercambio y consulta de información 
+sin importar la ubicación geográfica.
+En una base de datos, las entidades y atributos del mundo real, se convierten en registros y campos.
+Estas entidades pueden ser tanto objetos materiales como libros o fotografías, pero también personas e incluso conceptos e ideas abstractas.
+
+CLASE 43: ALTAS Y CONSULTAS A UNA BASE DE DATOS
+---------------------------------------------------------
+
+CLASE 44: MODIFICACIONES A UNA BASE DE DATOS
+---------------------------------------------------------
+
+CLASE 45: CREACIÓN DE REPORTES EN PDF CON BASE DE DATOS
+---------------------------------------------------------
+
+CLASE 46: FORMATO DE TEXTO E INSERCIÓN DE IMÁGENES (PDF)
+---------------------------------------------------------
+
+CLASE 47: CONEXIÓN A BASE DE DATOS REMOTA MYSQL
+Una base de datos remota, es aquella que esta alojada en un servidor, a kilómetros de distancia de nuestra ubicación geográfica.
+De esta manera, podemos acceder a la información contenida en esta base de datos, desde cualquier computadora que cuente con permiso para establecer una 
+conexión.
+Para poder realizar conexiones a una base de datos desde una computadora remota, es necesario contar con los siguientes elementos:
+1. Programa con el que se realizará la conexión. (es el que desarrollaremos en java)
+2. Servidor de la base de datos: (ejemplo: www.tudominio.com, se debe adquirir un servidor con un proveedor de hosting).
+3. Número de puerto: Generalmente es el 3306
+4. Usuario de acceso a tu servidor
+5. Contraseña de acceso a tu servidor
+
+CLASE 48: CONSULTAS A UNA BASE DE DATOS REMOTA:
+------------------------------------------------------------------------------------------
+
+******************************************************************************************************************************************************************
+
+CLASE 49: PROYECTO FINAL - REQUERIMIENTOS DEL PROYECTO - 1
+Los requerimientos del proyecto, son la condición y la capacidad que debe tener un sistema o producto, para satisfacer las necesidades y especificaciones de un 
+cliente, usuario o consumidor en general.
+Los requerimientos "no indican", que diseño debe tener el producto o como se debe desarrollar, únicamente establecen las funciones y contenidos, con los que se 
+espera cuente el sistema o producto, pero principalmente, los requerimientos indican como deben interactuar los usuario con él.
+Es decir, los requerimientos, son las características funcionales, que un cliente o usuario desea que estén contenidas en nuestro producto o sistema.
+Es importante comprender la diferencia que existe entre cliente y usuario, ya que:
+- Un usuario: Es la persona que utiliza el sistema o producto.
+- Un cliente: Es la persona que requiere el sistema o producto, y se convierte en el resposable de validar y aprobar nuestro trabajo.
+Siempre será necesario distinguir usuario y cliente, ya que en distintas ocasiones, podremos encontrar que hay un conflicto entre los requerimientos de ambos.
+Pues en la mayoría de los casos, los requerimientos de los clientes tienen prioridad sobre los requerimientos de los usuarios.
+
+CLASE 50: REQUERIMIENTOS DEL PROYECTO - 2
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CLASE 51: CREACIÓN DE LA BASE DE DATOS
+Sw: DataSystem
+BD: bd_ds
+
+CLASE 52: DISEÑO DE LA INTERFAZ DE LOGIN
+CLASE 53: DISEÑO VISUAL PARA CONTROLES INTERACTIVOS
+CLASE 54: COMO CAMBIAR EL ICONO A UN FRAME
+CLASE 55: DISEÑO Y PROGRAMACIÓN DEL BOTÓN ACCEDER
+CLASE 56: INICIO DE SESIÓN
+CLASE 57: DISEÑO DE INTERFAZ DE ADMINISTRADOR
+CLASE 58: PROGRAMACIÓN DE LA INTERFAZ DE ADMINISTRADOR
+CLASE 59: INTERFAZ PARA EL REGISTRO DE USUARIOS
+CLASE 60: PROGRAMACIÓN DE INTERFAZ PARA REGISTRAR USUARIOS
+CLASE 61: VALIDACIÓN DE CAMPOS DE TEXTO
+CLASE 62: REGISTRO DE USUARIOS
+CLASE 63: DISEÑO DE INTERFAZ PARA LA GESTION DE USUARIOS
+CLASE 64: LLENADO DE UN JTABLE DESDE UNA BASE DE DATOS
+CLASE 65: PROGRAMACIÓN DE EVENTOS EN UNA TABLA
+CLASE 66: DISEÑO DE INTERFAZ PARA INFORMACIÓN DEL USUARIO I
+CLASE 67: DISEÑO DE INTERFAZ PARA INFORMACIÓN DEL USUARIO II
+CLASE 68: CONSULTANDO LA INFORMACIÓN GENERAL DEL USUARIO
+CLASE 69: BOTÓN ACTUALIZAR LA INFORMACIÓN DEL USUARIO
+CLASE 70: MODIFICACIÓN DE USUARIOS EN LA BASE DE DATOS
+CLASE 71: DISEÑO DE INTERFAZ PARA MODIFICAR CONTRASEÑAS
+CLASE 72: RESTAURACIÓN Y MODIFICACIÓN DE CONTRASEÑAS
+CLASE 73: DISEÑO DE INTERFAZ PARA CAPTURISTA
+CLASE 74: PROGRAMACIÓN DE INTERFAZ PARA CAPTURISTA
+CLASE 75: DISEÑO DE INTERFAZ PARA REGISTRO DE CLIENTES
+CLASE 76: PROGRAMACIÓN DE INTERFAZ REGISTRO DE CLIENTES
+CLASE 77: DISEÑO DE INTERFAZ PARA GESTIÓN DE CLIENTES
+CLASE 78: PROGRAMACIÓN DE INTERFAZ GESTIÓN DE CLIENTES
+CLASE 79: DISEÑO DE INTERFAZ PARA INFORMACIÓN DE CLIENTES
+CLASE 80: PROGRAMACIÓN DE INTERFAZ INFORMACIÓN DE CLIENTES
+CLASE 81: DISEÑO DE INTERFAZ REGISTRAR EQUIPO
+CLASE 82: PROGRAMACIÓN DE INTERFAZ REGISTRAR EQUIPO
+CLASE 83: PROGRAMACIÓN DEL BOTÓN ACTUALIZAR CLIENTE
+CLASE 84: PROGRAMACIÓN DEL BOTÓN IMPRIMIR REPORTE
+CLASE 85: DISEÑO DE INTERFAZ INFORMACIÓN EQUIPO
+CLASE 86: PROGRAMACIÓN DE INTERFAZ INFORMACIÓN DE EQUIPO
+CLASE 87: PROGRAMACIÓN DEL BOTÓN ACTUALIZAR EQUIPO
+CLASE 88: PROGRAMACIÓN DEL BOTÓN IMPRIMIR CLIENTES
+CLASE 89: DISEÑO DE LA INTERFAZ TÉCNICO
+CLASE 90: DISEÑO DE LA INTERFAZ GESTIONAR EQUIPOS
+
+
+
+
+Hosting Gratuito:
+Ingreso con gmail
+gmcontrpuma@gmail.com
+XyMomiax100pre.
+
+Usuario: gmaxeliot
+Contraseña: Mr.Robot201192
+70493428***
+
+Dominio:
+dominio: codigobyte.ga
+gmcontrpuma@gmail.com
+XyMomiax100pre.
+
+Base de datos exportada a web000
+Nombre de la base de datos: alumnos
+usuario: Gianmarco
+Contraseña: )00CW<A82l5C)c>(
+
+
+PLUS ------- PILAS Y COLAS
+PILAS: Es una estructura de datos de entradas ordenadas tales que solo se pueden introducir y eliminar por un extremo, llamado cima.
+push: añade un elemento en la cima.
+pop: elimina el elemento final.
+peek: mostrar el último elemento.
+empty: para saber si la pila esta vacía.
+Es una estructura LIFO (Last in first out) - Ultimo en entrar primero en salir.
+
+COLAS: Es una estructura de datos, caracterizada por ser una secuencia de elementos en la que la operación de inserción se realiza por un extremo y la 
+extracción por el otro.
+Es una estructura FIFO (First in first out) - Primero en entrar primero en salir.
+La operación insertar añade un elemento por el extremo final de la cola.
+La operación quitar elimina o extrae un elemento por el extremo opuesto.
+offer: añadir un elemento.
+pool: eliminar un elemento.
+
+LISTAS: Es una estructura de datos dinámica.
+
+**********************************************************************************************
+
+*Split(): Para separar elementos dentro de un string, según un delimitador que le pasemos.
+
+
+* DEDUCCIONES MÍAS:
+La palabra this solo es necesario usar dentro del constructor y no en los métodos.
+Método start: Para ejecutar un hilo
+Método sleep: Para dormir un hilo
+El i++: aumenta en 1 a la i en la siguiente ejecución.
+El ++i: aumenta en 1 a la i en la actual ejecución.
+
+El ciclo foreach es para imprimir una array o lista siempre y cuando estos ya tengan los elementos insertados, xq sino el iterador del foreach no imprimiría nada.
+
+* TRADUCCIONES:
+rounding mode: modo de redondeo
+half up: medio arriba
+set scale: establecer escala
+random: aleatorio
+
+
+
